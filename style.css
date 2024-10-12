@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins';
+}
+
+a {
+    text-decoration: none;
+    color: #636363;
+}
+
+
+.nav_links {
+    list-style: none;
+}
+
+
+header .logo {
+    width: 53px;
+height: 60px;
+margin-right: auto;
+}
+
+
+
+.btn_primary {
+    display: inline-block;
+    background-color: #53BBAB;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    padding: 10px 40px;
+}
+
+.btn_primary:hover {
+    background-color: white;
+    color: #000;
+    border: 1px solid #53BBAB;
+}
+
+
+/* header  */
+
+
+header {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    margin: 0px 30px;
+}
+
+
+
+.nav_links li {
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+.nav_links li a {
+    font-size: 15px;
+}
+
+.nav_links li a:hover {
+    color: #6AAF47;
+}
+.menu_toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu_toggle .bar {
+    width: 40px;
+    height: 5px;
+    margin: 2px 0px;
+    background-color: green;
+}
+
+
+
+
+/* hero section */
+
+#hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.hero_img img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.hero_info{
+    margin: 150px 0px 0px 150px;
+}
+.hero_info h1 {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: bold;
+}
+.span1 {
+    color: #031140;
+}
+
+.span2 {
+    color: #6AAF47;
+}
+
+
+.hero_info p {
+    color: #4A4A4A;
+}
+
+.hero_p {
+    font-weight: bold;
+}
+
+.hero_info a {
+    background-color: #53BBAB;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    padding: 10px 40px;
+}
+
+
+.why_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.why_img img {
+    margin: 150px 0px 0px 150px;
+    width: 500px;
+    height: 500px;
+}
+.Why {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+
+.why_info {
+    width: 80%;
+    margin: 170px 0px 0px 20px;
+}
+.why_info h1 {
+    color: #6AAF47;
+    font-weight: bold;
+    font-size: 40px;
+}
+.why_info p {
+    font-size: 14px;
+    color: #636363;
+}
+.why_info .why_des1 {
+    margin-bottom: 30px;
+}
+.why_info .why_des2 {
+    margin-bottom: 30px;
+}
+
+
+/* spot section */
+
+.spot_bg {
+background: linear-gradient(180deg, #FFFFFF -6.38%, #B9F8EE 100%);
+}
+.spot_title {
+    color: #6AAF47;
+    font-size: 40px;
+}
+#spot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.spot_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.spot{
+    background-color: #FFFFFF;
+    border-radius: 22px;
+    text-align: center;
+    margin: 0px 10px;
+    padding: 10px 20px;
+}
+
+.spot h1 {
+    color: #6AAF47;
+}
+.spot p {
+    color: #4E616D;
+}
+
+
+
+
+
+
+/* ABOUT */
+#about_us {
+    margin: 50px 0px 0px 0px;
+}
+.about_us_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+.about_img {
+    margin: 0px 0px 0px 150px;
+
+}
+.about_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.about_descrption {
+    margin: 0px 0px 0px 50px;
+}
+
+.about_descrption h1 {
+    color: #6AAF47;
+}
+
+.about_descrption p {
+    color: #636363;
+    margin-bottom: 20px;
+}
+
+
+
+/* whwt we offer */
+
+#offer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 200px;
+
+}
+.offer_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.offer {
+    margin: 0px 20px;
+}
+.offer1 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0px 10px;
+}
+.offer1_info h3, p{
+    color: white;
+    padding: 0px 30px;    
+ }
+ .offer1_info  p{
+    font-size: 13px;
+}
+ .offer1_info h3{
+    margin-top: 250px;
+}
+.offer1_info {
+    height: 400px;
+    width: 300px;
+    background: url('images/offer.png') no-repeat center / cover;
+}
+
+
+
+.offer_title 
+{
+color: #6AAF47;
+}
+
+
+/* footer */
+footer 
+{
+    display: flex;
+    justify-content: center;
+    background-color: #031140;
+}
+li {
+    list-style: none    ;
+}
+.footer_container {
+    margin: 20px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer {
+    margin: 0px 10px;
+}
+
+.footer ul li a 
+{
+    margin: 10px 0px;
+    color: white;
+}
+
+.footer ul li 
+{
+    margin: 10px 0px;
+}
+@media (max-width : 760px){
+        .nav_links {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            width: 100%;
+            height: 50%;
+            left: 0;
+            z-index: 1;
+            top: 70px;
+            text-align: center;
+            background-color: #6AAF47;
+        }
+        .nav_links li {
+            margin: 5px;
+            font-size: 20px;
+        }
+
+        .menu_toggle {
+            display: flex;
+        }
+        .nav_links.active {
+            display: flex;
+        }
+        .hero_container {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .hero_info{
+            margin: 10px 10px;
+        }
+        .why_container {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .why_img img {
+            margin: 0px;
+            width: 100%;
+            height: 100%;
+ 
+        }
+        .why_info {
+            padding: 20px;
+            width: 100%;
+            margin: 0px;
+        }
+        .spot_container {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .spot {
+            margin: 10px 0px;
+        }
+        .about_us_container {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .about_img {
+            margin: 0px;
+        
+        }
+        .about_descrption {
+            margin: 0px;
+        }
+        .offer_container {
+            display: grid;
+            grid-template-columns: 1fr;
+        
+        }
+        
+        .offer1 {
+         
+            margin-top: 10px;
+        }
+
+        .offer1_info {
+            background: url('images/offer.png') no-repeat center / cover;
+        }
+        .footer_container {
+            grid-template-columns: 1fr 1fr;
+        }
+        
+        
+        
+}
