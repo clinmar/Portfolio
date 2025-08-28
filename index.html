@@ -26,57 +26,39 @@
 
 
 
-        
-        
-                #figma-designs {
-            padding: 60px 20px;
-            background: #f9fafb;
-          }
-          .design-gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 24px;
-            margin-top: 30px;
-          }
-          .design-card {
-            background: #fff;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            transition: transform 0.3s;
-          }
-          .design-card:hover {
-            transform: translateY(-6px);
-          }
-       .design-card img {
-  width: 100%;
-  max-height: 250px; /* limits the height */
-  object-fit: contain; /* keeps aspect ratio */
-  display: block;
-  background: #f3f4f6; /* light background behind transparent SVGs */
+        .design-section {
+  padding: 40px 20px;
+}
+
+.design-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.design-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
   padding: 10px;
 }
-          .design-info {
-            padding: 20px;
-          }
-          .design-title {
-            font-size: 20px;
-            font-weight: 600;
-            margin-bottom: 10px;
-          }
-          .design-description {
-            font-size: 14px;
-            color: #555;
-            margin-bottom: 15px;
-          }
-          .design-link {
-            color: #0077ff;
-            font-weight: 500;
-            text-decoration: none;
-          }
-          .design-link:hover {
-            text-decoration: underline;
-          }
+
+.design-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+}
+
+.design-title {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
 
 
 
@@ -1179,26 +1161,22 @@
         </div>
       </div>
 
-      <!-- ✅ New Figma Design Project -->
-      <div class="project-card">
-        <div class="project-image">🖌️</div>
-        <div class="project-content">
-          <h3 class="project-title">Figma UI/UX Design</h3>
-          <p class="project-description">Designed clean, modern UI prototypes and wireframes in Figma. Focused on responsive layouts, user flows, and design systems for scalable projects.</p>
-          <div class="project-tech">
-            <span class="tech-tag">Figma</span>
-            <span class="tech-tag">UI Design</span>
-            <span class="tech-tag">Prototyping</span>
-            <span class="tech-tag">UX Research</span>
-          </div>
-          <div class="project-links">
-            <a href="YOUR_FIGMA_LINK" target="_blank" class="project-link project-link-primary">View Design</a>
-            <a href="#" class="project-link project-link-secondary">Design Process</a>
-          </div>
-        </div>
-      </div>
-
+     <section id="figma-designs" class="design-section">
+  <h2 class="section-title">Figma Designs</h2>
+  <div class="design-grid">
+    <div class="design-card">
+      <img src="img/fig-sab.svg" alt="Figma Design 1">
+      <p class="design-title">Sample Design 1</p>
     </div>
+    <div class="design-card">
+      <img src="img/fig-2.svg" alt="Figma Design 2">
+      <p class="design-title">Sample Design 2</p>
+    </div>
+    <div class="design-card">
+      <img src="img/fig-3.svg" alt="Figma Design 3">
+      <p class="design-title">Sample Design 3</p>
+    </div>
+    <!-- Add more here -->
   </div>
 </section>
 
@@ -1435,6 +1413,7 @@ toggle.addEventListener('click', () => {
   
 </body>
 </html>
+
 
 
 
