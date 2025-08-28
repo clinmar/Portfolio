@@ -24,53 +24,64 @@
             padding: 0 24px;
         }
 
-        #figma-designs {
-    padding: 60px 20px;
-    background: #f9fafb;
-  }
-  .design-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 24px;
-    margin-top: 30px;
-  }
-  .design-card {
-    background: #fff;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    transition: transform 0.3s;
-  }
-  .design-card:hover {
-    transform: translateY(-6px);
-  }
-  .design-card img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  .design-info {
-    padding: 20px;
-  }
-  .design-title {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
-  .design-description {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 15px;
-  }
-  .design-link {
-    color: #0077ff;
-    font-weight: 500;
-    text-decoration: none;
-  }
-  .design-link:hover {
-    text-decoration: underline;
-  }
 
+
+        
+        
+                #figma-designs {
+            padding: 60px 20px;
+            background: #f9fafb;
+          }
+          .design-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+            margin-top: 30px;
+          }
+          .design-card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+          }
+          .design-card:hover {
+            transform: translateY(-6px);
+          }
+       .design-card img {
+  width: 100%;
+  max-height: 250px; /* limits the height */
+  object-fit: contain; /* keeps aspect ratio */
+  display: block;
+  background: #f3f4f6; /* light background behind transparent SVGs */
+  padding: 10px;
+}
+          .design-info {
+            padding: 20px;
+          }
+          .design-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
+          }
+          .design-description {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 15px;
+          }
+          .design-link {
+            color: #0077ff;
+            font-weight: 500;
+            text-decoration: none;
+          }
+          .design-link:hover {
+            text-decoration: underline;
+          }
+
+
+
+
+        
         /* Navigation */
         nav {
             position: fixed;
@@ -1424,6 +1435,7 @@ toggle.addEventListener('click', () => {
   
 </body>
 </html>
+
 
 
 
