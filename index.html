@@ -555,50 +555,61 @@
 
 
 
-
-
-
-
-.design-section {
-  padding: 40px 20px;
-}
+/* Figma Designs */
+.design-section { padding: 60px 0; background: #f9fafb; }
 
 .design-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
 }
 
 .design-card {
+  display: flex;
+  flex-direction: column;
   background: #fff;
+  border: 1px solid #f0f0f0;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  text-align: center;
-  padding: 10px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
 }
 
-.design-card img {
+.design-card:hover {
+  transform: translateY(-4px);
+  border-color: #e0e0e0;
+  box-shadow: 0 12px 24px rgba(0,0,0,.08);
+}
+
+.design-thumb {
+  /* consistent thumbnail frame */
+  aspect-ratio: 4 / 3;          /* change to 3/2 or 16/9 if you prefer */
   width: 100%;
-  max-height: 200px;
-  object-fit: contain;
+  background: #f3f4f6;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.design-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;           /* shows full design without cropping */
   display: block;
-  margin: auto;
 }
 
-.design-title {
-  margin-top: 8px;
-  font-size: 14px;
-  font-weight: 500;
-  color: #333;
+.design-info { padding: 16px; }
+.design-title { font-size: 16px; font-weight: 600; margin-bottom: 6px; color: #000; }
+.design-description { font-size: 14px; color: #666; }
+
+/* Responsive columns */
+@media (max-width: 1024px) {
+  .design-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
-
-
-
-
-
-
-
+@media (max-width: 640px) {
+  .design-grid { grid-template-columns: 1fr; }
+}
 
 
 
@@ -1213,28 +1224,49 @@
 
 
 
-
-
-
-    <section id="figma-designs" class="design-section">
-  <h2 class="section-title">Figma Designs</h2>
-  <div class="design-grid">
-    <div class="design-card">
-      <img src="img/fig-sab.svg" alt="Figma Design 1">
-      <p class="design-title">Sample Design 1</p>
+<section id="figma-designs" class="design-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Figma Designs</h2>
+      <p class="section-subtitle">Web & UI/UX layouts created in Figma.</p>
     </div>
-    <div class="design-card">
-      <img src="img/fig-2.svg" alt="Figma Design 2">
-      <p class="design-title">Sample Design 2</p>
+
+    <div class="design-grid">
+      <!-- Card 1 -->
+      <a class="design-card" href="#" target="_blank" rel="noopener">
+        <div class="design-thumb">
+          <img src="img/fig-sab.svg" alt="SAB Website Redesign (Figma)">
+        </div>
+        <div class="design-info">
+          <h3 class="design-title">SAB Website Redesign</h3>
+          <p class="design-description">Clean UI, strong hierarchy, responsive layout.</p>
+        </div>
+      </a>
+
+      <!-- Card 2 -->
+      <a class="design-card" href="#" target="_blank" rel="noopener">
+        <div class="design-thumb">
+          <img src="img/fig-2.svg" alt="Figma Design 2">
+        </div>
+        <div class="design-info">
+          <h3 class="design-title">Figma Design 2</h3>
+          <p class="design-description">Landing page concept & components.</p>
+        </div>
+      </a>
+
+      <!-- Card 3 -->
+      <a class="design-card" href="#" target="_blank" rel="noopener">
+        <div class="design-thumb">
+          <img src="img/fig-3.svg" alt="Figma Design 3">
+        </div>
+        <div class="design-info">
+          <h3 class="design-title">Figma Design 3</h3>
+          <p class="design-description">Checkout flow & mobile screens.</p>
+        </div>
+      </a>
     </div>
-    <div class="design-card">
-      <img src="img/fig-3.svg" alt="Figma Design 3">
-      <p class="design-title">Sample Design 3</p>
-    </div>
-    <!-- Add more here -->
   </div>
 </section>
-
 
 
 
@@ -1443,6 +1475,7 @@ toggle.addEventListener('click', () => {
   
 </body>
 </html>
+
 
 
 
